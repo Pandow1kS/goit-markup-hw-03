@@ -32,19 +32,19 @@ body {
 
 .hidden {
   display: none;
+  /* visibility: hidden; */
 }
 
 .container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header {
   background-color: var(--color-primary-light);
-  margin: 24px 0px 25px;
   border-bottom: 1px solid var(--color-additional);
 }
 .header-section {
@@ -82,7 +82,7 @@ nav {
   justify-content: flex-end;
   gap: 50px;
   margin: 0;
-  padding-left: 0;
+  padding: 32px 0px;
   list-style: none;
 }
 
@@ -114,6 +114,9 @@ nav {
 }
 .footer li {
   margin-bottom: 9px;
+}
+.footer li:last-child {
+  margin-bottom: 0;
 }
 
 .footer-logo {
@@ -181,7 +184,6 @@ nav {
 }
 .section-second ul {
   display: inline-flex;
-  align-items: stretch;
   gap: 30px;
 }
 .section-second li {
@@ -192,6 +194,8 @@ nav {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .section-second p {
   color: var(--color-secondary);
@@ -204,19 +208,22 @@ nav {
 .section-third {
   padding-bottom: 94px;
   padding-top: 47px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .section-third h2 {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .section-third ul {
   display: flex;
-  justify-content: space-around;
   margin-top: 0;
   gap: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 .section-team {
   padding-top: 94px;
@@ -237,16 +244,19 @@ nav {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.section-team-text {
+  padding: 30px 0;
 }
 .section-team h3 {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  padding-top: 30px;
-  padding-bottom: 10px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .section-team p {
   text-align: center;
@@ -255,11 +265,12 @@ nav {
   font-weight: 400;
   letter-spacing: 0.48px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .section-services {
   padding-top: 94px;
   padding-bottom: 94px;
+  justify-content: center;
 }
 .services-main-btn {
   display: flex;
