@@ -31,8 +31,14 @@ body {
 }
 
 .hidden {
-  display: none;
-  /* visibility: hidden; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -68,10 +74,13 @@ body {
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.28px;
+  padding: 32px 0px;
+  display: block;
 }
 .header-link:hover,
 .header-link.current {
   color: var(--color-brand);
+  padding: 32px 0px;
 }
 nav {
   display: flex;
@@ -82,13 +91,11 @@ nav {
   justify-content: flex-end;
   gap: 50px;
   margin: 0;
-  padding: 32px 0px;
   list-style: none;
 }
 
 .nav-header-contacts {
   display: flex;
-  justify-content: flex-end;
   gap: 40px;
   margin-left: auto;
   margin-bottom: 0;
@@ -325,6 +332,9 @@ nav {
 }
 .services-text {
   padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
 }
 .services h3 {
   color: var(--color-primary);
